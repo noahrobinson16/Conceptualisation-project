@@ -39,6 +39,7 @@ class Personne:
         pass
 
 
+
     def __str__(self):
         return f"-------------------------------" \
                f"\nPrénom: {self.name}" \
