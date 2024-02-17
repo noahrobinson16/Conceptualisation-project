@@ -13,31 +13,37 @@ class Personne:
         birth_month = self.birth_month
         birth_day = self.birth_day
 
-        def determine_age(birth_year, birth_month, birth_day):
+        def determine_age(birth_y, birth_m, birth_d):
             # Define the birthdate
-            birthdate = datetime(birth_year, birth_month, birth_day)
+            birthdate = datetime(birth_y, birth_m, birth_d)
 
             # Get the current date
             current_date = datetime.now()
 
             # Calculate the difference in days
             difference = current_date - birthdate
-            days_passed_since_birth = difference.days
+            days_passed = difference.days
 
-            return days_passed_since_birth
+            return days_passed
 
         days_passed_since_birth = determine_age(birth_year, birth_month, birth_day)
 
         self.age = floor(days_passed_since_birth / 365)
         self.days_passed_since_birth = days_passed_since_birth
 
+    def classify(self):
+        if self.age < 18:
+            age_group = 'minor'
+        elif self.age < 65:
+            age_group = 'adult'
+        else:
+            age_group = 'senior'
 
     def __repr__(self):
         pass
 
     def __hash__(self):
         pass
-
 
     def __str__(self):
         return f"-------------------------------" \
@@ -53,7 +59,7 @@ class Personne:
 
 
 class Job:
-    def __init__(self, prénom:str, nom:str, company: str, heure_ouverture: int, heure_fermeture: int,
+    def __init__(self, prénom: str, nom: str, company: str, heure_ouverture: int, heure_fermeture: int,
                  temps_plein: bool, jour_embauche: int, mois_embauche: int, année_embauche: int):
         self.company = company
         self.heure_ouverture = heure_ouverture
@@ -68,25 +74,23 @@ class Job:
         mois_embauche = self.mois_embauche
         jour_embauche = self.jour_embauche
 
-        def determine_day_since_acceptation_to_the_workplace(année_embauche, mois_embauche, jour_embauche):
+        def determine_day_since_acceptation_to_the_workplace(enroll_y, enroll_m, enroll_d):
             # Define the birthdate
-            date_de_début_au_travail = datetime(année_embauche, mois_embauche, jour_embauche)
+            date_de_début_au_travail = datetime(enroll_y, enroll_m, enroll_d)
 
             # Get the current date
             current_date = datetime.now()
 
             # Calculate the difference in days
             difference = current_date - date_de_début_au_travail
-            days_passed_since_acceptation_at_the_job = difference.days
+            days_passed = difference.days
 
-            return days_passed_since_acceptation_at_the_job
+            return days_passed
 
         days_passed_since_acceptation_at_the_job = determine_day_since_acceptation_to_the_workplace(année_embauche,
                                                                                                     mois_embauche,
                                                                                                     jour_embauche)
         self.jour_depuis_début_emploi = days_passed_since_acceptation_at_the_job
-
-
 
     def __str__(self):
         return (f"-------------------------------"
@@ -96,7 +100,6 @@ class Job:
                 f"\nTemps plein: {self.temps_plein}"
                 f"\nNombre de jour à l'emploi: {self.jour_depuis_début_emploi}"
                 f"\n-------------------------------")
-
 
 
 ########################################################################################################################
@@ -113,5 +116,7 @@ print(fred_hamel)
 print(sophie_lebel)
 print(emmanuelle_turgeon)
 print(pierre_robinson)
-job_noah_robinson = Job("Noah", "Robinson", "McDonald's", 5, 24, False, 4, 5, 2021)
+job_noah_robinson = Job("Noah", "Robinson", "McDonald's", 500, 2400, False, 4, 5, 2021)
 print(job_noah_robinson)
+job_flavie_pepin = Job("Flavie", "Pepin", "Subway", 8, 22, False, 7, 7, 2023)
+print(job_flavie_pepin)
