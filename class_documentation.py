@@ -25,11 +25,13 @@ class Objet:
         Fonction qui détermine les composantes de l'instance qui seront regardées lors d'une comparaison
         avec l'opérateur ==.
         :param other: Ce avec quoi l'instance, dans ce cas-ci Objet, sera comparée.
-        :return:
+        :return: True or False
         """
         if isinstance(other,
-                      Objet):  # L'opérateur isinstance sert à vérifier si la comparaison se fait entre deux instances de la même classe.
-            return self.forme == other.forme and self.masse == other.masse
+                      Objet):  # L'opérateur isinstance sert à vérifier si la comparaison se fait entre deux
+            # instances de la même classe.
+            return self.forme == other.forme and self.masse == other.masse  # Ne regardera jamais si la couleur des
+            # éléments est la même ou non.
         return False
 
 
