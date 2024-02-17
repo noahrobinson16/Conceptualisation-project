@@ -19,5 +19,7 @@ class Objet:
         """
         return f"L'objet est {self.forme}, de couleur {self.couleur} et d'une masse de {self.masse} kg"
 
+
 objet_un = Objet("Rond", "Rouge", 525)
+print(objet_un)
 
