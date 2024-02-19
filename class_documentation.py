@@ -52,8 +52,18 @@ class Objet:
         """
         return self.masse / 453 + 1 # On peut appliquer les opérations mathématiques désirées.
 
-    def
 
+class EnsembleObjet:
+    def __init__(self, ensemble_alpha:list, ensemble_num:list):
+        self.ensemble_alpha = ensemble_alpha
+        self.ensemble_num = ensemble_num
+
+    def __len__(self):
+
+    def __contains__(self, item):
+
+
+    def __
 
 # __init__
 objet_un = Objet("Rond", "Rouge", 525)
