@@ -63,8 +63,6 @@ class EnsembleObjet:
     def __contains__(self, item):
 
 
-    def __
-
 # __init__
 objet_un = Objet("Rond", "Rouge", 525)
 objet_deux = Objet("Rond", "Bleu", 110)
