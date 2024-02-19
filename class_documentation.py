@@ -34,6 +34,26 @@ class Objet:
             # éléments est la même ou non.
         return False
 
+    def __repr__(self):
+        """
+        :return: Retourne le string lorsque la fonction print(repr()) sera appelée.
+        """
+        return f"Objet(\"{self.forme}\", \"{self.couleur}\", {self.masse})"
+
+    def __int__(self):
+        """
+        :return: Retourne l'entier lorsque la fonction print(int()) sera appelée.
+        """
+        return self.masse ** 10  # On peut appliquer les opérations mathématiques désirées.
+
+    def __float__(self):
+        """
+        :return: Retourne le nombre lorsque la fonction print(float()) sera appelée.
+        """
+        return self.masse / 453 + 1 # On peut appliquer les opérations mathématiques désirées.
+
+    def
+
 
 # __init__
 objet_un = Objet("Rond", "Rouge", 525)
@@ -50,3 +70,15 @@ print(objet_un)
 print(objet_deux)
 print(objet_un == objet_deux)
 print(objet_un == 1)
+
+# __repr__
+print(repr(objet_un))
+print(repr(objet_deux))
+
+# __int__
+print(int(objet_un))
+print(int(objet_deux))
+
+# __float__
+print(float(objet_un))
+print(float(objet_deux))
