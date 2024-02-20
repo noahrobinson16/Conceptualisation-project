@@ -61,6 +61,10 @@ class Objet:
         """
         return Objet("Inconnue", "Inconnue", self.masse + other.masse)
 
+    def __delete__(self, instance):
+
+    def __del__(self):
+
 
 class EnsembleObjet:
     def __init__(self, ensemble_alpha: list, ensemble_num: list):
@@ -83,6 +87,7 @@ class EnsembleObjet:
         :return: True or False
         """
         return item in self.ensemble_alpha
+
 
 # --------------------------------Class Objet-------------------------------------------
 # __init__
