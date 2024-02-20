@@ -52,6 +52,15 @@ class Objet:
         """
         return self.masse / 453 + 1  # On peut appliquer les opérations mathématiques désirées.
 
+    def __add__(self, other):
+        """
+        Attention, les deux éléments additionnés doivent provenir de la même classe.
+        Attention, l'instance résultante doit posséder l'entièreté des composantes nécessaires par la fonction __init__
+        :param other: Représente l'instance qui additionnera sa composante désirée à celle de l'instance.
+        :return: Retourne une nouvelle instance avec, dans ce cas-ci, la nouvelle valeur associée à la masse
+        """
+        return Objet("Inconnue", "Inconnue", self.masse + other.masse)
+
 
 class EnsembleObjet:
     def __init__(self, ensemble_alpha: list, ensemble_num: list):
@@ -74,7 +83,6 @@ class EnsembleObjet:
         :return: True or False
         """
         return item in self.ensemble_alpha
-
 
 # --------------------------------Class Objet-------------------------------------------
 # __init__
@@ -104,6 +112,12 @@ print(int(objet_deux))
 # __float__
 print(float(objet_un))
 print(float(objet_deux))
+
+# __add__
+résultat_un = objet_un + objet_deux
+print(résultat_un.masse)
+print(résultat_un)
+
 
 # -------------------------------Class EnsembleObjet-------------------------------------
 # __init__
