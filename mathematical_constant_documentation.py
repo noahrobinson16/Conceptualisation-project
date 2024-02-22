@@ -190,3 +190,31 @@ gompertz_constant = 0.59634736232319407434
 # de Brujin-Newman constant
 
 
+# Van der Pauw constant
+van_der_pauw_constant = 4.53236014182719380962
+
+# Magic angle
+magic_angle = 0.955316618124509278163
+
+# Artin's constant
+artin_constant = 0.37395581361920228805
+
+# Porter's constant
+porter_constant = 1.46707807943397547289
+
+# Lochs constant
+lochs_constant = 0.97027011439203392574
+
+# DeVicci's tesseract constant
+devicci_tesseract_constant = 1.00743475688427937609
+
+# Lieb's square ice constant
+lieb_square_ice_constant = 1.53960071783900203869
+
+# Niven's constant
+niven_constant = 1.70521114010536776428
+
+# Stephens' constant
+stephen_constant = 0.57595996889294543964
+
+
