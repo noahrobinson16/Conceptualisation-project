@@ -62,8 +62,10 @@ class Objet:
         return Objet("Inconnue", "Inconnue", self.masse + other.masse)
 
     def __delete__(self, instance):
+        pass
 
     def __del__(self):
+        pass
 
 
 class EnsembleObjet:
@@ -122,7 +124,6 @@ print(float(objet_deux))
 résultat_un = objet_un + objet_deux
 print(résultat_un.masse)
 print(résultat_un)
-
 
 # -------------------------------Class EnsembleObjet-------------------------------------
 # __init__
