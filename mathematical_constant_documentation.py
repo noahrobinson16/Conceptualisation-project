@@ -163,3 +163,30 @@ constant_related_asymptotic_behavior_lebesgue_constant = 0.98943127383114695174
 # Feller-Tornier constant
 feller_tornier_constant = 0.66131704946962233528
 
+# Base 10 Champernowne constant
+base_10_champernowne_constant = 0.12345678910111213141
+
+# Salem constant
+salem_constant = 1.17628081825991750654
+
+# Khinchin's constant
+khinchin_constant = 2.68545200106530644530
+
+# Lévy's constant 1
+lévy_constant_1 = 1.18656911041562545282
+
+# Lévy's constant 2
+lévy_constant_2 = 3.27582291872181115978
+
+# Copeland-Erdos constant
+copeland_erdos_constant = 0.23571113171923293137
+
+# Mill's constant
+mill_constant = 1.30637788386308069046
+
+# Gompertz-constant
+gompertz_constant = 0.59634736232319407434
+
+# de Brujin-Newman constant
+
+
