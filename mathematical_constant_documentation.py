@@ -50,7 +50,7 @@ ln2 = 0.69314718055994530941
 lemniscate_constant = 2.62205755429211981046
 
 # Euler's constant
-euler_constant = 057721566490153286060
+euler_constant = 0.57721566490153286060
 
 # Erdos-Borwein constant
 erdos_borwein_constant = 1.60669515241529176378
@@ -216,5 +216,74 @@ niven_constant = 1.70521114010536776428
 
 # Stephens' constant
 stephen_constant = 0.57595996889294543964
+
+# Regular paperfolding sequence
+regular_paperfolding_sequence = 0.85073618820186726036
+
+# Reciprocal Fibonacci constant
+reciprocal_fibonacci_constant = 3.35988566624317755317
+
+# Chvátal–Sankoff constant for the binary alphabet
+
+# Feigenbaum constant δ
+feigenbaum_constant_δ = 4.66920160910299067185
+
+# Chaitin's constants
+
+
+# Robbins constant
+robbins_constant = 0.66170718226717623515
+
+# Weierstrass constant
+weierstrass_constant = 0.47494937998792065033
+
+# Fransén–Robinson constant
+fransén_robinson_constant = 2.80777024202851936522
+
+# Feigenbaum constant α
+feigenbaum_constant_α = 2.50290787509589282228
+
+# Erdős–Tenenbaum–Ford constant
+erdos_tenenbaum_ford_constant = 0.08607133205593420688
+
+# Conway's constant
+conway_constant = 1.30357726903429639125
+
+# Hafner–Sarnak–McCurley constant
+hafner_sarnak_mccurley_constant = 0.35323637185499598454
+
+# Backhouse's constant
+backhouse_constant = 1.45607494858268967139
+
+# Viswanath constant
+viswanath_constant = 1.1319882487943
+
+# Komornik–Loreti constant
+komornik_loreti_constant = 1.78723165018296593301
+
+# Embree–Trefethen constant
+embree_trefethen_constant = 0.70258
+
+# Heath-Brown–Moroz constant
+heath_brown_moroz_constant = 0.00131764115485317810
+
+# MRB constant
+mrb_constant = 0.18785964246206712024
+
+# Prime constant
+prime_constant = 0.41468250985111166024
+
+# Somos' quadratic recurrence constant
+somos_quadratic_recurrence_constant = 1.66168794963359412129
+
+# Foias constant
+foias_constant = 1.18745235112650105459
+
+# Logarithmic capacity of the unit disk
+logarithmic_capacity_unit_disk = 0.59017029950804811302
+
+# Taniguchi constant
+taniguchi_constant = 0.67823449191739197803
+
 
 
